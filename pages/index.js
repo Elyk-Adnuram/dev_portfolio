@@ -31,6 +31,7 @@ export default function Home() {
           <a
             href="https://www.linkedin.com/in/kyle-marunda-58409439/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn Profile
           </a>
