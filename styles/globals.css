@@ -1,16 +1,30 @@
+/*CSS Modules are useful for component-level styles. But if you want some CSS to be loaded by every page, to load global CSS files, create a file called pages/_app.js. 
+In Next.js, you can add global CSS files by importing them from pages/_app.js. You cannot import global CSS anywhere else.*/
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
