@@ -2,27 +2,14 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import Script from "next/script";
 
 export default function Home() {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-
-        <Script
-          id="my-script4"
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
-        ></Script>
-        <Script strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-970MMECM9Z');
-      `}
-        </Script>
       </Head>
+
       <section className={utilStyles.headingMd}>
         <p>
           I am a full stack web developer skilled in the MERN (MongoDB, Express,

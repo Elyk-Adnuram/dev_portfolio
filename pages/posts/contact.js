@@ -10,21 +10,20 @@ export default function Contact() {
     <Layout>
       <Head>
         <title>Contact </title>
-
-        <Script
-          id="my-script2"
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
-        ></Script>
-        <Script strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
+      </Head>
+      <Script
+        id="gtag-base"
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
+      ></Script>
+      <Script strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-970MMECM9Z');
       `}
-        </Script>
-      </Head>
+      </Script>
+
       <h1>
         I am open to opportunities for learning, collaboration and can be
         contacted via the below channels. Looking forward to hearing from you.
