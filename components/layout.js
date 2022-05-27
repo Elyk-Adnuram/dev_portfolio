@@ -17,6 +17,19 @@ export const siteTitle = "Developer Portfolio";
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <Script
+        strategy="lazyOnload"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
+      ></Script>
+      <Script strategy="lazyOnload">
+        {`window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-970MMECM9Z');
+      `}
+      </Script>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
