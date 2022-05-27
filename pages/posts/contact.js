@@ -14,7 +14,6 @@ export default function Contact() {
         <Script
           id="my-script2"
           strategy="afterInteractive"
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
         ></Script>
         <Script strategy="afterInteractive">

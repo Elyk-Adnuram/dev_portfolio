@@ -8,7 +8,6 @@ import utilStyles from "../styles/utils.module.css";
 //Import the Link API to support client-side navigation
 import Link from "next/link";
 import Header from "./Header";
-import Script from "next/script";
 
 const name = "Kyle Marunda";
 //exporting of the site title
@@ -32,20 +31,6 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <Script
-          id="my-script5"
-          strategy="afterInteractive"
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
-        ></Script>
-        <Script strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-970MMECM9Z');
-      `}
-        </Script>
       </Head>
       <header className={styles.header}>
         <Header />

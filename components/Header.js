@@ -4,7 +4,7 @@
 This is obviously not always necessary. 
 To support client-side navigation (this takes place in the browser, without making a request to the server) we use Next.js’ Link API.*/
 import Link from "next/link";
-import Script from "next/script";
+// import Script from "next/script";
 import Head from "next/head";
 const linkStyle = {
   marginRight: 40,
@@ -12,22 +12,6 @@ const linkStyle = {
 
 const Header = () => (
   <div>
-    <Head>
-      <Script
-        id="my-script"
-        strategy="afterInteractive"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
-      ></Script>
-      <Script strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-970MMECM9Z');
-      `}
-      </Script>
-    </Head>
     <Link href="/">
       <a style={linkStyle}>About</a>
     </Link>

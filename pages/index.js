@@ -13,14 +13,12 @@ export default function Home() {
         <Script
           id="my-script4"
           strategy="afterInteractive"
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
         ></Script>
         <Script strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-970MMECM9Z');
       `}
         </Script>

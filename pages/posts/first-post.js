@@ -12,7 +12,7 @@ export default function FirstPost() {
         <Script
           id="my-script3"
           strategy="afterInteractive"
-          async
+          a
           src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
         ></Script>
         <Script strategy="afterInteractive">
