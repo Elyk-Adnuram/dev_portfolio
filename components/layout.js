@@ -18,19 +18,6 @@ export const siteTitle = "Developer Portfolio";
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Script
-        strategy="lazyOnload"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
-      ></Script>
-      <Script strategy="lazyOnload">
-        {`window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-970MMECM9Z');
-      `}
-      </Script>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -45,6 +32,20 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <Script
+          id="my-script5"
+          strategy="lazyOnload"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
+        ></Script>
+        <Script strategy="lazyOnload">
+          {`window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-970MMECM9Z');
+      `}
+        </Script>
       </Head>
       <header className={styles.header}>
         <Header />

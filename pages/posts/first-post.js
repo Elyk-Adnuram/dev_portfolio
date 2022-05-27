@@ -9,21 +9,22 @@ export default function FirstPost() {
     <Layout>
       <Head>
         <title>Projects</title>
-      </Head>
-      <Script
-        id="my-script3"
-        strategy="lazyOnload"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
-      ></Script>
-      <Script strategy="lazyOnload">
-        {`window.dataLayer = window.dataLayer || [];
+        <Script
+          id="my-script3"
+          strategy="lazyOnload"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
+        ></Script>
+        <Script strategy="lazyOnload">
+          {`window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-970MMECM9Z');
       `}
-      </Script>
+        </Script>
+      </Head>
+
       <h1>Below are some of my projects, feel free to check them out</h1>
       <h2>
         <a
