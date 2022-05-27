@@ -12,6 +12,7 @@ const linkStyle = {
 const Header = () => (
   <div>
     <Script
+      id="my-script"
       strategy="lazyOnload"
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"

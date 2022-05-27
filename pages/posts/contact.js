@@ -12,6 +12,7 @@ export default function Contact() {
         <title>Contact </title>
       </Head>
       <Script
+        id="my-script2"
         strategy="lazyOnload"
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"

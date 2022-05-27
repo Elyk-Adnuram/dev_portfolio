@@ -8,6 +8,7 @@ import utilStyles from "../styles/utils.module.css";
 //Import the Link API to support client-side navigation
 import Link from "next/link";
 import Header from "./Header";
+import Script from "next/script";
 
 const name = "Kyle Marunda";
 //exporting of the site title

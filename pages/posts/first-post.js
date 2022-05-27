@@ -11,6 +11,7 @@ export default function FirstPost() {
         <title>Projects</title>
       </Head>
       <Script
+        id="my-script3"
         strategy="lazyOnload"
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
