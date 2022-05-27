@@ -4,8 +4,7 @@
 This is obviously not always necessary. 
 To support client-side navigation (this takes place in the browser, without making a request to the server) we use Next.js’ Link API.*/
 import Link from "next/link";
-// import Script from "next/script";
-import Head from "next/head";
+
 const linkStyle = {
   marginRight: 40,
 };
