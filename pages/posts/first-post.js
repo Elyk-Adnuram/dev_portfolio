@@ -3,6 +3,7 @@
 <Head> is a React Component that is built into Next.js. It allows you to modify the <head> of a page. */
 import Head from "next/head";
 import Layout from "../../components/layout";
+import Script from "next/script";
 
 export default function FirstPost() {
   return (
@@ -10,7 +11,18 @@ export default function FirstPost() {
       <Head>
         <title>Projects</title>
       </Head>
-
+      <Script
+        id="myscript"
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
+      ></Script>
+      <Script id="myscript1" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-970MMECM9Z');
+      `}
+      </Script>
       <h1>Below are some of my projects, feel free to check them out</h1>
       <h2>
         <a

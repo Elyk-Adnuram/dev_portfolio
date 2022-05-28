@@ -9,7 +9,18 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-
+      <Script
+        id="myscript2"
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
+      ></Script>
+      <Script id="myscript3" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-970MMECM9Z');
+      `}
+      </Script>
       <section className={utilStyles.headingMd}>
         <p>
           I am a full stack web developer skilled in the MERN (MongoDB, Express,
