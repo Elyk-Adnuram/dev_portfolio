@@ -16,7 +16,7 @@ export default function Contact() {
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-970MMECM9Z"
       ></Script>
-      <Script strategy="afterInteractive">
+      <Script id="gtag-base1" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
