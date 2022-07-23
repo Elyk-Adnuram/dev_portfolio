@@ -8,6 +8,8 @@ Use styles.container as the className*/
   max-width: 36rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
+  background-image: linear-gradient(#2D3142, #BFC0C0, #FFFFFF,#EF8354, #4F5D75 )
+  
 }
 
 .header {
