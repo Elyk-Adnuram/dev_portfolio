@@ -46,7 +46,7 @@ export default function FirstPost() {
       </h2>
       <h2>
         <a
-          href="https://github.com/Elyk-Adnuram/Basic-math-functions"
+          href="https://elyk-adnuram.github.io/Basic-math-functions/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -74,17 +74,7 @@ export default function FirstPost() {
           Vehicle Counter{" "}
         </a>
       </h2>
-      <h2>
-        <a
-          href="https://github.com/Elyk-Adnuram/itunes-search-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Itunes Search App{" "}
-        </a>
-      </h2>
-    </Layout>
+     </Layout>
   );
 }
 // Note: If you need to link to an external page outside the Next.js app, just use an <a> tag without Link.//
