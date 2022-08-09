@@ -54,26 +54,7 @@ export default function FirstPost() {
           Basic Math Calculator{" "}
         </a>
       </h2>
-      <h2>
-        <a
-          href="https://github.com/Elyk-Adnuram/superDooperStore"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Online Store{" "}
-        </a>
-      </h2>
-      <h2>
-        <a
-          href="https://github.com/Elyk-Adnuram/Vehicle-counter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Vehicle Counter{" "}
-        </a>
-      </h2>
+      
      </Layout>
   );
 }
